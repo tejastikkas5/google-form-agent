@@ -25,7 +25,7 @@ import { Container } from "@components/common";
 import useAuth from "@hooks/useAuth";
 import useForms from "@hooks/useForms";
 import type { PromptGenerateResponse } from "@services/forms";
-import type { QuestionSchema } from "@types/index";
+import type { QuestionSchema } from "@/types";
 
 // ──────────────────────────────────────────────
 // Sub-components
@@ -192,7 +192,7 @@ interface ChatMessage {
 
 export const FormsPage: React.FC = () => {
   const { user, isAuthenticated, isLoading: isAuthLoading } = useAuth();
-  const { isLoading, error, promptGenerateForm, clearError } = useForms();
+  const { isLoading, promptGenerateForm, clearError } = useForms();
 
   const [messages, setMessages] = useState<ChatMessage[]>([
     {

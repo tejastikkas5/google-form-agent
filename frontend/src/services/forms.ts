@@ -5,7 +5,7 @@
  */
 
 import apiClient from "./api";
-import type { FormSchema } from "@types/index";
+import type { FormSchema } from "@/types";
 
 export interface FormCreateResponse {
   formId: string;
