@@ -10,7 +10,7 @@ import formsService, {
   type FormDetailsResponse,
   type PromptGenerateResponse,
 } from "@services/forms";
-import type { FormSchema } from "@/types";
+import type { FormSchema } from "../types";
 
 export interface UseFormsReturn {
   forms: PromptGenerateResponse[];

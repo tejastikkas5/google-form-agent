@@ -25,7 +25,7 @@ import { Container } from "@components/common";
 import useAuth from "@hooks/useAuth";
 import useForms from "@hooks/useForms";
 import type { PromptGenerateResponse } from "@services/forms";
-import type { QuestionSchema } from "@/types";
+import type { QuestionSchema } from "../types";
 
 // ──────────────────────────────────────────────
 // Sub-components

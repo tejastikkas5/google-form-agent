@@ -16,7 +16,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { HealthService } from "@services";
-import type { ProjectInfo } from "@/types";
+import type { ProjectInfo } from "../types";
 
 // ------------------------------------------------------------------
 // Return shape
