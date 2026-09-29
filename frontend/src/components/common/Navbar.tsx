@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, Zap } from "lucide-react";
-import { cn } from "@lib/utils";
+import { cn } from "@/lib/utils";
 import { Button } from "@components/ui";
 import { useScrollPosition } from "@hooks/useScrollPosition";
 import useAuth from "@hooks/useAuth";

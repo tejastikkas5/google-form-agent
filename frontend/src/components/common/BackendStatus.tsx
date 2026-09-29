@@ -16,7 +16,7 @@
  */
 
 import { RefreshCw, ServerCrash } from "lucide-react";
-import { cn } from "@lib/utils";
+import { cn } from "@/lib/utils";
 import { Loader } from "@components/common/Loader";
 import { EmptyState } from "@components/common/EmptyState";
 import { Button } from "@components/ui";
