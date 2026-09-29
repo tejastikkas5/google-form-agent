@@ -1,29 +1,9 @@
-# ============================================================
-# Prompt2Form Backend — Requirements
-# ============================================================
-
-# Web framework
-fastapi==0.115.14
-
-# ASGI server
-uvicorn[standard]==0.34.3
-
-# Pydantic v2 + settings management
-pydantic==2.11.7
-pydantic-settings==2.9.1
-
-# Environment variable loading
-python-dotenv==1.1.1
-
-# Async HTTP client (used by LLM, Google API, OAuth)
-httpx==0.28.1
-
-# Colored logging
-colorlog==6.9.0
-
-# JWT token signing for sessions
-pyjwt==2.10.1
-
-# Google Generative AI SDK
-google-genai==2.16.0
-
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+python-dotenv
+httpx
+colorlog
+pyjwt
+google-genai

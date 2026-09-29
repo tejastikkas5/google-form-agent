@@ -1,13 +1,9 @@
-# ============================================================
-# Prompt2Form Backend — Requirements (Root for Vercel)
-# ============================================================
-
-fastapi==0.115.14
-uvicorn[standard]==0.34.3
-pydantic==2.11.7
-pydantic-settings==2.9.1
-python-dotenv==1.1.1
-httpx==0.28.1
-colorlog==6.9.0
-pyjwt==2.10.1
-google-genai==2.16.0
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+python-dotenv
+httpx
+colorlog
+pyjwt
+google-genai
