@@ -30,11 +30,9 @@ export const authService = {
    * Get the direct backend OAuth login endpoint URL.
    */
   getGoogleLoginUrl(): string {
-    const baseUrl = import.meta.env.VITE_API_URL as string;
-    const cleanBase = baseUrl.endsWith("/") ? baseUrl.slice(0, -1) : baseUrl;
-    // Backend API mounted at /api/v1/auth/login or VITE_API_URL/auth/login
-    const endpoint = cleanBase.endsWith("/v1") ? `${cleanBase}/auth/login` : `${cleanBase}/v1/auth/login`;
-    return endpoint;
+    const rawBase = (import.meta.env.VITE_API_URL as string) || "";
+    const cleanBase = rawBase.replace(/\/v1\/?$/, "").replace(/\/+$/, "");
+    return `${cleanBase}/v1/auth/login`;
   },
 
   /**

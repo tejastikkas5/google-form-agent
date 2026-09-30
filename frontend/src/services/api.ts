@@ -18,15 +18,18 @@ import axios, {
 import type { ApiError } from "../types";
 
 // ------------------------------------------------------------------
-// Base URL — sourced from environment variable only, never hardcoded
+// Base URL — sourced from environment variable, normalised to omit trailing /v1
 // ------------------------------------------------------------------
-const BASE_URL = import.meta.env.VITE_API_URL as string;
+const rawBaseUrl = import.meta.env.VITE_API_URL as string;
 
-if (!BASE_URL) {
+if (!rawBaseUrl) {
   throw new Error(
     "[Prompt2Form] VITE_API_URL is not defined. Add it to your .env file.",
   );
 }
+
+// Ensure base URL points to /api (strips trailing /v1 if user included it in VITE_API_URL)
+const BASE_URL = rawBaseUrl.replace(/\/v1\/?$/, "").replace(/\/+$/, "");
 
 // ------------------------------------------------------------------
 // Client factory
