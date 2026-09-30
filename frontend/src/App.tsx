@@ -7,6 +7,7 @@ import {
   FormsPage,
   LoginPage,
   NotFoundPage,
+  PrivacyPage,
 } from "@pages/index";
 
 /**
@@ -24,6 +25,7 @@ function App() {
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/forms" element={<FormsPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
         </Route>
 
         {/* 404 — also inside layout so Navbar is visible */}
